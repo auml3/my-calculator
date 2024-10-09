@@ -2,7 +2,9 @@
 
 int main(void)
 {
-    printf("     Hello welcome to my simple calculator :)!\n");
+    char answer;
+    do{
+    printf("      Hello welcome to my simple calculator !\n");
     printf("✩-----------------------------------------------✩\n");
     printf("\n");
 
@@ -38,6 +40,12 @@ int main(void)
     }
 printf("✩-----------------------------------------------✩\n");
 
+printf("\nWould you like to continue? press Y if yes and type any key to exit. ");
+scanf(" %c", &answer);
+    }
+    while(answer == 'y' || answer == 'Y');
+printf("thank you for using!!");
+printf("\n");
 
     return 0;
 
